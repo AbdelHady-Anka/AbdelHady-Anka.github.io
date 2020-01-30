@@ -1,0 +1,10 @@
+/* import fonts from fonts.css file */
+@import './fonts.css';
+
+.header-area {
+  padding: 0;
+}
+
+.main-menu {
+    padding: 0;
+}
