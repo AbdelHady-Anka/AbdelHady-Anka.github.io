@@ -1,42 +1,83 @@
 /* import fonts from fonts.css file */
 @import url(./fonts.css);
 
-/* css variables */
+/* import css variables */
 @import url(./partials/variables.css);
-
+/* import global style */
+@import url(./partials/global.css);
 html,
 body {
   margin: 0;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  font-family: var(--roboto);
 }
 
 /* start navigation */
-.header-area .main-menu .navbar .navbar-brand {
+/* .header-area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 5rem;
-}
-/* 
-.header-area .main-menu .navbar {
-  padding: 1rem 15rem;
 } */
+
 
 .header-area .main-menu .navbar .navbar-brand .brand {
   width: 52px;
 }
 
 .header-area .main-menu .navbar-nav .nav-item .nav-link {
-  font-family: var(--roboto);
+  font: normal 500 15px/2px var(--roboto);
   text-transform: uppercase;
-  font-weight: 570;
   padding: 1rem 2rem;
   color: var(--title-color);
 }
 
-.header-area .main-menu .navbar-nav .active a{
+.header-area .main-menu .navbar-nav .active a {
   background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;  
+  background-clip: text;
+}
+
+.header-area .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 /* end navigation */
+
+/* start banner area */
+
+.main-area .banner-area {
+  background: linear-gradient(
+    45deg,
+    #ffffff00,
+    rgba(248, 252, 0, 0.692) 0%,
+    #ffffff00
+  );
+}
+
+.main-area .banner-area .banner-title .hi {
+  font-weight: 500;
+}
+.main-area .banner-area .banner-title .hi::after {
+  margin-left: 5%;
+}
+.main-area .banner-area .banner-title .hi::before {
+  margin-right: 5%;
+}
+.main-area .banner-area .banner-title .hi::after,
+.main-area .banner-area .banner-title .hi::before {
+  content: '';
+  height: 2px;
+  width: 10vw;
+  background-color: black;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+
+
+.main-area .banner-area .banner-title .se{
+  font-size: 2rem;
+}
+/* end banner area */
