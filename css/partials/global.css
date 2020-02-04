@@ -1,7 +1,7 @@
-.title-text{
-    font: normal bold 56px/72px var(--roboto);
-  }
-  
+.title-text {
+  font: normal bold 56px/72px var(--roboto);
+}
+
 .button {
   padding: 0.8rem 2.2rem;
   font: normal 500 16/20px;
@@ -22,4 +22,29 @@
   background: whitesmoke;
   background-clip: padding-box;
   color: black;
+}
+
+.button.secondary-button {
+  background: whitesmoke;
+  background-clip: padding-box;
+  transition: background 0.6s ease;
+}
+
+.button.button.secondary-button:hover {
+  background: var(--gradient-color);
+  color: whitesmoke;
+  box-shadow: var(--box-shadow);
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: var(--gradient-color);
+  content: '';
+  z-index: -1;
+  border-radius: 4px;
 }
