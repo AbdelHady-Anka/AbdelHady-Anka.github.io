@@ -82,3 +82,20 @@ body {
   font-size: 1.7rem;
 }
 /* end banner area */
+
+
+/* start about area */
+.main-area .about-area{
+  padding: 2rem 1rem;
+}
+
+.main-area .about-area .about-title>span{
+  display: block;
+  font: normal bold 30px/40px var(--roboto);
+  letter-spacing: 14px;
+}
+
+.main-area .about-area .prg{
+  padding: 1rem 0;
+}
+/* end about area */
