@@ -1,7 +1,12 @@
 .title-text {
   font: normal bold 50px/72px var(--roboto);
 }
-
+.font-roboto{
+  font: var(--roboto);
+}
+.btn {
+  cursor: pointer;
+}
 .button {
   padding: 0.5rem 1.6rem;
   font: normal 500 16/20px var(--roboto);
@@ -42,13 +47,13 @@
   background-clip: padding-box;
 }
 
-.button.secondary-button:hover{
+.button.secondary-button:hover {
   background: var(--gradient-color);
   background-clip: padding-box;
   color: whitesmoke;
 }
 
-.para{
+.para {
   color: var(--text-color);
   font: normal 500 16px/25px var(--roboto);
 }

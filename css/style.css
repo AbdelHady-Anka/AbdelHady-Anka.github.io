@@ -19,7 +19,6 @@ body {
   padding: 0 2rem 0 5rem;
 } */
 
-
 .header-area .main-menu .navbar .navbar-brand .brand {
   width: 52px;
 }
@@ -47,16 +46,16 @@ body {
 /* end navigation */
 
 /* start banner area */
-.main-area .banner-area{
+.main-area .banner-area {
   background: url(../img/phoenix.png) no-repeat center;
-  background-size: contain; 
+  background-size: contain;
 }
-.main-area .banner-img >img{
+.main-area .banner-img > img {
   padding: 7rem 0;
   width: 70rem;
 }
-@media(max-width: 768px){
-  .main-area .banner-area{
+@media (max-width: 768px) {
+  .main-area .banner-area {
     background-position: unset;
     background-size: unset;
   }
@@ -68,9 +67,9 @@ body {
   margin-left: 5%;
 }
 .main-area .banner-area .banner-title .hi::before {
-  margin-right: .1rem;
+  margin-right: 0.1rem;
 }
-.main-area .banner-area .banner-title .hi::after{
+.main-area .banner-area .banner-title .hi::after {
   content: '';
   height: 2px;
   width: 16rem;
@@ -78,24 +77,90 @@ body {
   display: inline-block;
   transform: translateY(-7px);
 }
-.main-area .banner-area .banner-title .se{
+.main-area .banner-area .banner-title .se {
   font-size: 1.7rem;
 }
 /* end banner area */
 
-
 /* start about area */
-.main-area .about-area{
+.main-area .about-area {
   padding: 2rem 1rem;
 }
-
-.main-area .about-area .about-title>span{
+.main-area .about-area .about-title > span {
   display: block;
   font: normal bold 30px/40px var(--roboto);
   letter-spacing: 14px;
 }
 
-.main-area .about-area .prg{
-  padding: 1rem 0;
+.h-shadow {
+  transition: transform 0.7s ease;
+}
+
+.tech-icon {
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+}
+.tech-icon:hover {
+  filter: contrast(1.5);
+}
+.h-shadow:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transform: scale(1.1);
+  border-width: 0;
 }
 /* end about area */
+
+/* Start experince area */
+.exp-area{
+  margin: 6rem 0;
+}
+.exp {
+  padding-left: 1rem;
+}
+
+.exp span {
+  display: block;
+}
+
+.exp .years-area {
+  position: relative;
+}
+.exp .years-area .years {
+  font: normal bold 84px/40px var(--roboto);
+  color: var(--secondary-color);
+  /* margin-right: 1rem; */
+}
+
+.exp .years-area .years::before {
+  position: absolute;
+  content: '';
+  width: 8rem;
+  height: 8rem;
+  border-style: dashed;
+  border-width: 0.2rem;
+  border-color: gray;
+  left: -5rem;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.exp {
+  background: transparent;
+  position: relative !important;
+}
+.exp::before {
+  background-color: #e029290a;
+  width: 16rem;
+  height: 90%;
+  bottom: 2rem;
+  content: '';
+  position: absolute;
+  align-self: center;
+  z-index: -1;
+}
+
+.exp .exp-word {
+  font: normal 600 22px/30px var(--roboto);
+  margin-right: 2rem;
+}
+/* End experince area */
