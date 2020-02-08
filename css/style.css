@@ -100,9 +100,6 @@ body {
   border: 1px solid var(--border-color);
   cursor: pointer;
 }
-.tech-icon:hover {
-  filter: contrast(1.5);
-}
 .h-shadow:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   transform: scale(1.1);
@@ -124,6 +121,7 @@ body {
 
 .exp .years-area {
   position: relative;
+  margin-bottom: 12rem;
 }
 .exp .years-area .years {
   font: normal bold 84px/40px var(--roboto) !important;
