@@ -69,21 +69,34 @@ $(document).ready(() => {
     $(".navbar-nav .nav-item").removeClass('active');
     event.target.parentElement.classList.add('active');
   })
-
-
-  // spalsh screen
-  $.SplashScreen({
-    id: 'splashscreen',
-    desktop: true,
-    mobile: true,
-    forceLoader: false,
-    queryParameter: 'loader',
-    progressCount: false,
-    progressCountId: 'status',
-    progressBar: false,
-    progressBarId: 'progress',
-    fadeEffect: true,
-    timeToFade: 1000, // in milliseconds (eg: 1000 = 1sec)
-    timeOut: 2000   // in milliseconds (eg: 2000 = 2sec)
-  });
 });
+
+
+
+// spalsh screen
+function loadSplashScreen() {
+  var images = document.images;
+  var countOfLoadedImages = 0;
+  var splashScreen = $("#splashscreen");
+  var mainArea = $("#mainarea");
+
+  function imageLoaded() {
+    countOfLoadedImages++;
+    if (countOfLoadedImages == images.length) {
+      splashScreen.IntervalPageCompleted = setTimeout(function () {
+        splashScreen.fadeOut(2000, function () {
+          mainArea.removeClass("d-none");
+        });
+      }, 1000);
+    }
+  }
+
+  for (var i = 0; i < images.length; i++) {
+    var img = new Image();
+    img.onload = imageLoaded;
+    img.onerror = imageLoaded;
+    img.src = images[i].src;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", loadSplashScreen(), false);
