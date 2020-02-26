@@ -16,12 +16,25 @@
 
     <!-- Custom css file -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/jquery.SplashScreen.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
     <!-- ========================== Start Header Area ========================= -->
 
+    <div id="splashscreen" class="bg-light">
+      <div class="container-fluid splash">
+        <div class="w-25 h-25 splash-img d-block mb-5 mx-auto">
+          <img src="./img/SVG/logo.svg" class="img-fluid" alt="" />
+        </div>
+        <div class="h-25 w-25 mx-auto text-center">
+          <div
+            class="spinner-grow mt-2 spinner"
+          ></div>
+        </div>
+      </div>
+    </div>
     <header class="header-area">
       <div class="main-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -78,18 +91,20 @@
               <h4 class="text-uppercase se">Software Engineer</h4>
               <div class="banner-buttons my-3">
                 <div class="d-flex flex-row flex-wrap">
-                  <button
+                  <a
                     type="button"
                     class="button primary-button text-uppercase mr-3"
+                    href="mailto:abdelhady.anka@gmail.com"
                   >
                     hire me
-                  </button>
-                  <button
+                  </a>
+                  <a
                     type="button"
                     class="btn button secondary-button text-uppercase"
+                    href="#about"
                   >
                     get cv
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -137,9 +152,13 @@
                 </p>
               </div>
               <div>
-                <button class="btn button primary-button text-uppercase">
+                <a
+                  class="btn button primary-button text-uppercase"
+                  href="./Abdelhady.pdf"
+                  download
+                >
                   Download cv
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -298,7 +317,7 @@
                     ><i class="fas fa-phone-alt fa-3x"></i
                   ></span>
                   <div class="call-now font-roboto">
-                    <a href="#" class="text-uppercase h4">
+                    <a href="tel:+963993456585" class="text-uppercase h4">
                       Call now
                     </a>
                     <span class="font-roboto">+963 993 456 585</span>
@@ -427,7 +446,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element latest">
               <div class="our-project">
                 <div class="project-img">
-                  <img src="./img/portfolio/p1.png" alt="" class="img-fluid" />
+                  <img src="./img/portfolio/p1.JPG" alt="" class="img-fluid" />
                 </div>
                 <div class="project-title py-4">
                   <h4 class="text-uppercase">eCommerce App</h4>
@@ -495,8 +514,6 @@
                 </div>
               </div>
             </div> -->
-
-            
           </div>
         </div>
       </section>
@@ -533,7 +550,7 @@
 
     <!-- magnific popup library -->
     <script src="./js/jquery.magnific-popup.min.js"></script>
-
+    <script src="./js/jquery.SplashScreen.js"></script>
     <!-- custom js file -->
     <script src="./js/main.js"></script>
   </body>

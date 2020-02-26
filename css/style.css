@@ -19,16 +19,16 @@ body {
   padding: 0 2rem 0 5rem;
 } */
 
-.navbar-fixed{
+.navbar-fixed {
   position: fixed;
   width: 100%;
   top: -1px;
   left: 0;
   right: 0;
-  background-color: #ffffff ;
+  background-color: #ffffff;
   box-shadow: var(--box-shadow);
   z-index: 999;
-  transition: background .7s ease;
+  transition: background 0.7s ease;
 }
 
 .header-area .main-menu .navbar .navbar-brand .brand {
@@ -82,7 +82,7 @@ body {
   margin-right: 0.1rem;
 }
 .main-area .banner-area .banner-title .hi::after {
-  content: '';
+  content: "";
   height: 2px;
   width: 16rem;
   background-color: black;
@@ -120,7 +120,7 @@ body {
 /* end about area */
 
 /* Start experince area */
-.exp-area{
+.exp-area {
   margin: 0 0;
 }
 .exp {
@@ -143,7 +143,7 @@ body {
 
 .exp .years-area .years::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 8rem;
   height: 8rem;
   border-style: dashed;
@@ -163,7 +163,7 @@ body {
   width: 16rem;
   height: 90%;
   bottom: 2rem;
-  content: '';
+  content: "";
   position: absolute;
   align-self: center;
   z-index: -1;
@@ -177,87 +177,99 @@ body {
 
 /* start services erea */
 
-.services-area{
+.services-area {
   padding: 7rem 2rem;
 }
 
-.services-area .services-title{
+.services-area .services-title {
   /* padding: 0 14rem; */
   margin-bottom: 5rem;
 }
 
-.services-area .services-title h1{
+.services-area .services-title h1 {
   font-size: 35px;
 }
 
-.services-area .services{
+.services-area .services {
   background-color: rgba(248, 252, 253, 0.973);
   padding: 2rem 0;
   width: 16rem;
-  margin: 1rem .5rem;
+  margin: 1rem 0.5rem;
 }
 /* end services erea */
 
-
 /* start project area */
-.project-area{
+.project-area {
   padding: 4rem 0;
 }
 
-.project-area .button-group button{
-background-color: transparent; 
-border: none;
-font: normal 500 16px/130px var(--roboto);
-text-transform: uppercase;
+.project-area .button-group button {
+  background-color: transparent;
+  border: none;
+  font: normal 500 16px/130px var(--roboto);
+  text-transform: uppercase;
 }
-.project-area .button-group .active{
+.project-area .button-group .active {
   color: dimgray;
 }
-.project-area .button-group button + button{
+.project-area .button-group button + button {
   padding-left: 3rem;
 }
 
-.project-area .title{
+.project-area .title {
   font: normal bold 39px/40px var(--roboto);
 }
 
-.project-area .grid .our-project .project-img img{
-  border-radius: .2rem;
+.project-area .grid .our-project .project-img img {
+  border-radius: 0.2rem;
 }
-.project-area .grid .our-project .project-img:hover img{
+.project-area .grid .our-project .project-img:hover img {
   filter: brightness(1.1) drop-shadow(1px 8px 90px #b1afaf);
 }
 /* end project area */
 
 /* footer area */
 
-.footer-area .maker{
+.footer-area .maker {
   color: var(--primary-color);
   font: normal bold 20px/42px var(--roboto);
 }
 
-.footer-area{
+.footer-area {
   padding: 5rem 0;
   background-image: url(../img/footer-bg.png);
   background-repeat: no-repeat;
-  background-position: top center;  
+  background-position: top center;
   /* background-size: 100%;
   background-position-x: 0;
   background-position-y: 0; */
 }
 
-
-.footer-area .social h5{
+.footer-area .social h5 {
   font: normal 500 23px/30px var(--roboto);
 }
 
-
-.footer-area .social a > i{
+.footer-area .social a > i {
   font-size: 22px;
   padding: 2rem;
   color: var(--border-color);
 }
 
-.footer-area .social a:hover > i{
-  color: var(--primary-color);    
+.footer-area .social a:hover > i {
+  color: var(--primary-color);
+}
+
+.splash-img {
+  /* margin: auto; */
+  /* transform: translate(0% , 50%); */
+}
+
+.splash {
+  transform: translateY(50%);
+}
+
+.spinner {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--secondary-color);
 }

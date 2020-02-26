@@ -17,12 +17,13 @@
 .button.primary-button {
   position: relative;
   box-sizing: border-box;
-  color: #fff;
+  color: #fff !important;
   background: var(--gradient-color);
   background-clip: padding-box;
   transition: background 0.6s ease;
 }
 .button.primary-button:hover {
+  color: black !important;
   background: whitesmoke;
   background-clip: padding-box !important;
   color: black;

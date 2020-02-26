@@ -69,4 +69,21 @@ $(document).ready(() => {
     $(".navbar-nav .nav-item").removeClass('active');
     event.target.parentElement.classList.add('active');
   })
+
+
+  // spalsh screen
+  $.SplashScreen({
+    id: 'splashscreen',
+    desktop: true,
+    mobile: true,
+    forceLoader: false,
+    queryParameter: 'loader',
+    progressCount: false,
+    progressCountId: 'status',
+    progressBar: false,
+    progressBarId: 'progress',
+    fadeEffect: true,
+    timeToFade: 1000, // in milliseconds (eg: 1000 = 1sec)
+    timeOut: 2000   // in milliseconds (eg: 2000 = 2sec)
+  });
 });
