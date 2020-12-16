@@ -84,7 +84,7 @@ function loadSplashScreen() {
     countOfLoadedImages++;
     if (countOfLoadedImages == images.length) {
       splashScreen.IntervalPageCompleted = setTimeout(function () {
-        splashScreen.fadeOut(2000, function () {
+        splashScreen.fadeOut(100, function () {
           mainArea.removeClass("d-none");
         });
       }, 1000);
